@@ -1,0 +1,84 @@
+body{
+    background-color: #c4915e;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 600px;
+    background-repeat: no-repeat;
+    /* margin-bottom: 10px; */
+}
+
+.image-container{
+  max-width: 1%;
+  height: auto;
+}
+
+h1 {
+    color: cyan;
+    text-align: center;
+}
+
+
+.line-1{
+    font-size: 80px;
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.line-2{
+    font-size: 40px;
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animations */
+.anim-typewriter-bday{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 6ch;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+/* Animation */
+.anim-typewriter-question{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 25ch;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+/* Button */
+.acknowledgeButton{
+    background-color: cyan;
+    font-family: 'Pixelify Sans', sans-serif;
+}
