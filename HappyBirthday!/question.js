@@ -95,10 +95,10 @@ function startCountdown() {
 
             switch(countdown) {
                 case 15:
-                    questionText.innerText = "I'm assuming yes if you don't Click \"no.\ before the time expires";
+                    questionText.innerText = "I'm assuming yes if you don't Click \"no.\" before the time expires";
                     break;
                 case 10:
-                    questionText.innerText = "Clocks ticking!!! Click \"no.\"";
+                    questionText.innerText = "Clocks ticking!!!";
                     break;
                 case 5:
                     questionText.innerText = "......It's a yes??";

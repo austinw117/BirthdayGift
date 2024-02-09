@@ -1,11 +1,11 @@
-// Hi Rydawg! Are you some random snooper?? Nonetheless, Rydawg I hope u like this present!!!!
+// Hi Rydawg! Or are you some random snooper?? Nonetheless, Rydawg I hope u like this present!!!!
 
 const passwordForm = document.getElementById("myForm");
 const iceBearGif = document.getElementById("iceBearGif");
-const falsePassword1 = "rydawgIsSuperCool";
-const falsePassword2 = "austinIsSoLame"; 
-const falsePassword3 = "rydawg21"; 
-const realPassword = "bdaygirl!"; 
+const falsePassword1 = "rydawgIsTheCoolestEver";
+const falsePassword2 = "austinIsSo____"; 
+const falsePassword3 = "rydawg__"; 
+const realPassword = "uhhhHello?"; 
 var clickCounter = 0;
 
 passwordForm.addEventListener("submit", passwordAuthentication);
@@ -20,27 +20,29 @@ function passwordAuthentication(){
     
     var text = "";
     var hint = "";
+    var options = "";
     var previousHint = "";
 
     // Display error message
     switch(clickCounter) {
         case 1:
             console.log("log: falsePassword1");
-            text = "Wow rydawg!! Very humble password of you!!! But it's your birthday so I'll let it slide!";
-            hint = "Here, just type how you really feel about me.\n Password: " + falsePassword2;
+            text = "Wow rydawg!! Very humble password of you!!! But it's your birthday so I'll let it slide!<br>";
+            options = "A. Amazing B. Smart C. Awesome D. LAME"
+            hint = "Here, complete the password by choosing how you really feel about me.<br> Password: " + falsePassword2 + "<br>" + options;
             iceBearGif.src = "images/iceBearGif1.gif";
-            previousHint = "hey";
             break;
         case 2:
+            // passwordForm.innerText("heyyyy");
             console.log("log: falsePassword2");
-            text = "...okay i was kidding now that's just mean. Alas, it is your bday so i'll let it slide...";
-            hint = "Did you forget your password? Here, try your nickname then how old your turning.\n Ex. " + falsePassword3;
+            text = "...okay i was kidding now that's just mean. Alas, it is your bday so once again i'll let it slide...<br>";
+            hint = "Did you forget your password?<br> Maybe it's your nickname then how old your turning?<br> Ex. " + falsePassword3;
             iceBearGif.src = "images/iceBearGif2.gif";
             break;
         case 3:
             console.log("log: falsePassword3");
-            text = "TWENTY ONE?!?!? You're clearly getting OLD...because it seems you forgot your password!";
-            hint = "Try this one: " + realPassword;       
+            text = "TWENTY ONE?!?!? Like you're a whole YEAR into your twenties!!<br>You're clearly getting OLD...because it seems you forgot your password!<br>";
+            hint = "No worries, try typing in: " + realPassword;       
             iceBearGif.src = "images/iceBearGif3.gif";
             break;
         case 4:
@@ -60,5 +62,5 @@ function passwordAuthentication(){
         }
     
     console.log("outside case statements");
-    errorMessageElement.textContent = text + " " + hint;
+    errorMessageElement.innerHTML = text + " " + hint;
 }
